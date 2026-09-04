@@ -1,0 +1,62 @@
+{
+  "Decision Tree": {
+    "MAE": 34.08,
+    "RMSE": 59.03,
+    "R2": 0.89
+  },
+  "Random Forest": {
+    "MAE": 24.22,
+    "RMSE": 40.98,
+    "R2": 0.947
+  },
+  "Gradient Boosting": {
+    "MAE": 25.06,
+    "RMSE": 39.68,
+    "R2": 0.9503
+  },
+  "DT  (Tuned)": {
+    "MAE": 31.66,
+    "RMSE": 54.35,
+    "R2": 0.9067
+  },
+  "RF  (Tuned)": {
+    "MAE": 38.01,
+    "RMSE": 58.13,
+    "R2": 0.8933
+  },
+  "GB  (Tuned)": {
+    "MAE": 21.7,
+    "RMSE": 35.69,
+    "R2": 0.9598
+  },
+  "Ridge Regression": {
+    "MAE": 103.72,
+    "RMSE": 137.88,
+    "R2": 0.3996
+  },
+  "Ridge (Tuned)": {
+    "MAE": 103.72,
+    "RMSE": 137.88,
+    "R2": 0.3996
+  },
+  "Extra Trees": {
+    "MAE": 23.86,
+    "RMSE": 40.27,
+    "R2": 0.9488
+  },
+  "Extra Trees (Tuned)": {
+    "MAE": 46.55,
+    "RMSE": 69.73,
+    "R2": 0.8465
+  },
+  "XGBoost": {
+    "MAE": 23.84,
+    "RMSE": 37.94,
+    "R2": 0.9545
+  },
+  "XGBoost (Tuned)": {
+    "MAE": 21.95,
+    "RMSE": 35.04,
+    "R2": 0.9612
+  }
+}

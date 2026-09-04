@@ -1,0 +1,171 @@
+/* ==========================================================
+   BIKE RENTAL DASHBOARD - PROFESSIONAL THEME (FIXED VISIBILITY)
+========================================================== */
+
+/* ---------------- GLOBAL ---------------- */
+html,
+body,
+.stApp {
+    background: rgb(67, 157, 205)
+    color: #1F2937;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ---------------- MAIN PAGE ---------------- */
+.main .block-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 1rem 2rem;
+}
+[data-testid="stAppViewContainer"] > .main {
+    max-width: 100% !important;
+}
+section.main > div {
+    max-width: 100% !important;
+}
+div[data-testid="stVerticalBlock"] { gap: .6rem; }
+div[data-testid="stHorizontalBlock"] { gap: 1rem; }
+
+/* ---------------- SIDEBAR ---------------- */
+section[data-testid="stSidebar"] {
+    background: #0F172A;
+    width: 230px !important;
+    min-width: 230px !important;
+    border-right: 2px solid #1E293B;
+}
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+.sidebar-logo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* ---------------- TITLE ---------------- */
+.dashboard-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1D4ED8;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dashboard-subtitle {
+    font-size: 18px;
+    color: #64748B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ---------------- KPI CARD ---------------- */
+[data-testid="metric-container"] {
+    background: white;
+    border-radius: 16px;
+    border-left: 6px solid #2563EB;
+    padding: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+    color: #111 !important; /* enforce dark text */
+}
+[data-testid="metric-container"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+/* Force all text inside KPI cards to be visible */
+[data-testid="metric-container"] * {
+    color: #111 !important;
+    font-weight: 600;
+}
+
+/* ---------------- CHARTS ---------------- */
+.js-plotly-plot {
+    width: 100% !important;
+    background:white;
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    color: #111 !important;
+}
+
+/* ---------------- DATAFRAME ---------------- */
+[data-testid="stDataFrame"] {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    color: #111 !important;
+}
+
+/* ---------------- BUTTON ---------------- */
+.stButton>button {
+    width: 100%;
+    height: 46px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+.stButton>button:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+/* ---------------- INPUTS ---------------- */
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox,
+.stSlider {
+    border-radius: 10px;
+}
+
+/* ---------------- TABS ---------------- */
+button[data-baseweb="tab"] {
+    background: white;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 18px;
+}
+button[data-baseweb="tab"][aria-selected="true"] {
+    background: #2563EB;
+    color: white;
+}
+
+/* ---------------- HEADINGS ---------------- */
+h1 { font-size: 38px; font-weight: 700; color: #111; }
+h2 { font-size: 30px; color: #111; }
+h3 { font-size: 24px; color: #111; }
+
+/* ---------------- INFO BOX ---------------- */
+.stInfo { border-left: 5px solid #2563EB; border-radius: 10px; }
+.stSuccess { border-left: 5px solid #16A34A; border-radius: 10px; }
+.stWarning { border-left: 5px solid #F59E0B; border-radius: 10px; }
+.stError { border-left: 5px solid #DC2626; border-radius: 10px; }
+
+/* ---------------- SCROLLBAR ---------------- */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background: #64748B; }
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    text-align: center;
+    color: #64748B;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* ---------------- FADE ANIMATION ---------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+[data-testid="metric-container"],
+.js-plotly-plot,
+[data-testid="stDataFrame"] {
+    animation: fadeIn .5s ease;
+}

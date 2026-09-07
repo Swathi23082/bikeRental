@@ -675,7 +675,7 @@ The prediction model uses the following features.
     st.info("""
 **Developed By**
 
-Sandhya
+Swathi
 
 **Project**
 
